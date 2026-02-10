@@ -1,0 +1,69 @@
+{
+  /* ---------- Theme ---------- */
+  "workbench.colorTheme": "Cobalt2",
+
+  /* ---------- Python ---------- */
+  "python.languageServer": "Default",
+  "python.createEnvironment.trigger": "off",
+
+  /* ---------- File associations ---------- */
+  "files.associations": {
+    "*.tex": "latex"
+  },
+
+  /* ---------- Inline suggestions & completions ---------- */
+  "editor.inlineSuggest.enabled": true,
+  "editor.tabCompletion": "on",
+  "editor.acceptSuggestionOnEnter": "on",
+
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "on",
+    "strings": "on"
+  },
+
+  /* ---------- GitHub Copilot (Antigravity ghost-text equivalent) ---------- */
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false,
+    "latex": true
+  },
+
+  "github.copilot.inlineSuggest.enable": true,
+
+  /* Optional but highly recommended */
+  "editor.suggest.preview": true,
+  "editor.suggest.showStatusBar": true,
+
+  /* ---------- LaTeX Workshop ---------- */
+  "latex-workshop.formatting.latex": "latexindent",
+  "latex-workshop.formatting.latex.path": "/usr/local/texlive/2025/bin/x86_64-linux/latexindent",
+
+  "latex-workshop.latex.outDir": "build",
+  "latex-workshop.latex.copyToOutDir": true,
+
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk 🔃",
+      "tools": ["latexmk"]
+    }
+  ],
+
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "/usr/local/texlive/2025/bin/x86_64-linux/latexmk",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdf",
+        "-outdir=build",
+        "%DOC%"
+      ]
+    }
+  ],
+  "explorer.confirmDelete": false
+}
